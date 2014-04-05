@@ -12,7 +12,9 @@ $(document).ready(function() {
             var $results = $(this);
             //console.log("$results");
             //console.log($results);
-            var $actions = $.fn.twitterResult.actions = $.fn.twitterResult.actions || $.fn.twitterResult.createActions();
+            var $actions = $.fn.twitterResult.actions = 
+                    $.fn.twitterResult.actions || 
+                    $.fn.twitterResult.createActions();
             var $a = $actions.clone().prependTo($results);
             var term = settings.term;
             $results.find("span.search_term").text(term);
